@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BIOSPHERE</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Island+Moments|Nunito' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+ <link rel="stylesheet" href="mystyle.css">
+
+<style>
+    h2, h3{color: rgb(10, 96, 93);}
+    h2{text-align: center;}
+    h3{text-decoration: underline;}
+    #email{font-size: 15px; color: rgb(16, 45, 28); text-decoration: italic; text-align: center;}
+    #slogan{text-align: center; font-size: 40px; font-family: 'Anforgiv', sans-serif; color: rgb(3, 43, 18);}
+    .navbar-collapse {
+  height: 150; /* Set the desired height */
+  background-size: cover;
+  background-position: center;
+}
+.navbar-nav .nav-link {
+  transition: all 0.3s ease; /* Add transition for smooth animation */
+}
+.navbar-nav .nav-link:hover {
+  transform: scale(1.2); /* Increase scale on hover */
+}
+
+
+</style>
+<style>
+    .article {
+        cursor: pointer;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        display: flex;
+        align-items: center;
+    }
+    .article img {
+        margin-right: 10px;
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .hidden {
+        display: none;
+    }
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg shadow " style="background-color: #fff;">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="logo1.png" style="height: 120px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html" style="font-family: 'Nunito'">Home</a></li>
+                 <li class="nav-item"><a class="nav-link" href="About us.html" style="font-family: 'Nunito'">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="FAQs.html" style="font-family: 'Nunito'">FAQs</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html" style="font-family: 'Nunito'">biofuel news </a></li>
+                <li class="nav-item"><a class="nav-link" href="PROJECTS.html" style="font-family: 'Nunito'">projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="fun.html" style="font-family: 'Nunito'">FUN</a></li>
+              </ul>
+          </div>
+          
+        </div>
+      </nav>
+
+	<div class="container py-3">
+       
+        <div class="article" onclick="toggleArticle('article1')">
+            <img src="news1.gif" alt="Emirates Logo">
+            <span style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; font-size: 150%;">MAR 28, 2024 <br> Emirates adds SAF on flights from Amsterdam Schiphol</span>
+        </div>
+        <div id="article1" class="hidden">
+            <p>
+                Emirates has commenced the activation of its fuel agreement with Neste at Amsterdam Schiphol Airport.
+                Over 2 million gallons of blended SAF will be supplied into the fuelling system at the Dutch Airport over the course of this year.
+                The airline will track the delivery of SAF into the fuelling systems and environmental benefits using standard industry accounting methodologies. Emirates’ partnership with Neste, announced late last year, represents one of the largest volumes of SAF that the airline has purchased to date.
+                Once fully supplied into Amsterdam Schiphol’s fuelling system, the blended SAF will have been comprised of over 700,000 gallons of neat SAF. The airline is also working with Neste to supply SAF into the fuelling systems at Singapore Changi Airport in the next few months.
+                Adel Al Redha, deputy president and chief operations officer, Emirates said: “Collaborating with committed partners like Neste is one of the practical steps we are taking to reduce our emissions, and it’s an all-important milestone in our own sustainability journey as an airline. Strong partnerships like this, especially at major air transport hubs such as Amsterdam, lay the foundation for how we can work with partners and airports to increase access to and availability of SAF across our network.”
+                Alexander Kueper, vice-president renewable aviation, Neste said: “We are proud to support Emirates in their sustainability journey. SAF is an available solution for reducing greenhouse gas emissions from air travel and it is exciting that Emirates have started using our Neste MY Sustainable Aviation Fuel at Amsterdam Airport Schiphol. It is also a great example of how we are working together with partners to accelerate SAF usage and are looking forward to the next steps of our cooperation.”
+                Emirates’ first flight powered by SAF blended with jet fuel took place in 2017 from Chicago. The airline currently operates flights from Paris, Lyon and Oslo with SAF. In October of last year, Emirates, with the support of partners, also integrated SAF into Dubai Airport fuelling systems, allocating the SAF to a number of flights, including a flight to Sydney.
+            </p>
+        </div>
+    
+        <div class="article" onclick="toggleArticle('article2')">
+            <img src="news2.gif" alt="CPM Logo">
+            <span style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; font-size: 150%;">MAR 27, 2024 <br> How CPM works to improve biofuel feedstock processing efficiency</span>
+        </div>
+        <div id="article2" class="hidden">
+            <p>
+                It takes a lot of inputs to convert a raw material into a usable biofuel. It requires specialised expertise, precision equipment, the correct materials and well-executed processes.
+                However, often, from a cost-perspective, the most significant expense in the process of converting raw materials to biofuel is energy.
+                That is why, at CPM, we have focused on developing products, solutions and expertise that can help our customers improve the efficiency of their biofuel production processes.
+                CPM’s role in biofuel production
+                CPM’s global brands touch biofuel production in many ways. Through its Crown brand, the company is one of the industry leaders in oilseed extraction technologies since the late 1800s, and it provides equipment and expertise to oilseed-based biofuel production facilities today.
+                Its automation capabilities improve these processes' automated efficiency.
+                Additionally, its legacy CPM brand provides equipment, services and expertise for the shredding, crushing, grinding, briquetting and pelletising processes that are essential to creating many biofuels.
+                Improving...
+            </p>
+        </div>
+    
+        <div class="article" onclick="toggleArticle('article3')">
+            <img src="news3.jpeg" alt="Emirates Logo">
+            <span style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; font-size: 150%;">MAR 25, 2024 <br>
+                Sunflower seed production set to increase globally
+                </span>
+        </div>
+        <div id="article3" class="hidden">
+            <p>
+                The International Grains Council (IGC) expects global production of sunflower seeds to reach 58.5 million tonnes in its first estimate for the 2024/25 marketing season.
+The anticipated increase in production is based in particular on higher yield expectations despite an approximately 2% reduction in the area planted.
+According to the IGC, the reasons for the expected decline in area are good global supply ofsunflower seed and the low price level.
+Output of sunflower seed in the EU-27 is expected to amount to 10.5 million tonnes, slightly more than the 10.2 million tonnes produced in the marketing period 2023/24.
+According to investigations conducted by Agrarmarkt Informations-Gesellschaft, the IGC anticipates larger harvests especially for Romania and Bulgaria.
+Production is also projected to increase in Brazil and Argentina. For Russia, the world's largest supplier of sunflower seed, the council forecasts a harvest volume of 17.4 million tonnes, which translates to a 200,000 tonne decrease on the current season.
+For Ukraine the Council projects an output of 16.2 million tonnes, which would be down around 300,000 tonnes, whereas China is not expected to see any significant changes in production.
+The IGC has pointed out that the crop forecast is quite vague at this point because sowing campaigns have not started in the most important sunflower seed producing countries.
+
+  </p>
+        </div>
+
+        <div class="article" onclick="toggleArticle('article4')">
+            <img src="news4.jpg" alt="Emirates Logo">
+            <spa style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; font-size: 150%;"> MAR 22, 2024 <br>
+                Global soybean output set to increase, says USDA
+                </span>
+        </div>
+        <div id="article4" class="hidden">
+            <p>
+                The US Department of Agriculture (USDA) expects global soybean output in the 2023/24 crop year to increase 18.8 million tonnes on the same period the previous year.
+Production is set to hit a new record high at around 397 million tonnes as adequate supply has caused stocks to rise worldwide.
+The USDA's soybean forecast for Brazil was slightly lowered to 155 million tonnes, approximately 7 million tonnes less than in the previous season.
+The USDA also expects global consumption to reach a new peak at an estimated 382 million tonnes. This compares to 365.9 million tonnes in 2022/23.
+In other words, consumption has increased by 4.3%.
+World ending stocks will presumably grow approximately 12.1 million tonnes to 114.3 million tonnes in 2023/24.
+According to information published by the USDA, the largest ending stocks are likely to be found in China, amounting to 37.6 million tonnes.
+This is probably due to the recent 8% budget increase for grain and oilseed stocks. The funds are intended to improve the country's food security.
+Investigations conducted by Agrarmarkt Informations-Gesellschaft suggest that, based on an export volume of 103 million tonnes expected by the USDA, Brazil's ending stocks will likely decline significantly around 3.2 million tonnes, reaching around 33.1 million tonnes.
+
+
+            </p>
+        </div>
+
+        <div class="article" onclick="toggleArticle('article5')">
+            <img src="news5.jpg" alt="Emirates Logo">
+            <span style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; font-size: 150%;">MAR 11, 2024<br>
+                Palm oil production up 2% on previous year
+                l</span>
+        </div>
+        <div id="article5" class="hidden">
+            <p>
+                According to the US Department of Agriculture (USDA), global palm oil production in 2023/24 is set to rise to a record high of 79.5 million tonnes, exceeding the previous year's level by just under 2%.
+The main reason for this forecast is anticipated production increases in Malaysia and Indonesia.
+Although Malaysian production was seasonally strongly curbed, the USDA currently projects an output of 19 million tonnes, which would be up 613,000 tonnes on the previous year.
+The possibilities of increasing palm oil output in the short term are limited. Even if new plantings are expedited, appreciable yields cannot be expected for another three or four years.
+Oil palm plantations have an economic life cycle of approximately 25 years. According to the Agrarmarkt Informations-Gesellschaft, this means that output is initially reduced even further when new plantations are created on existing land.
+Annual growth of production is therefore likely to progress slowly, at least in the coming years - provided, however, that the palm oil area will not be expanded further either by changing the use of existing land or, in the worst case, by clearing primeval forest.
+This is precisely what the provisions of the Renewable Energy Directive (RED II) are intended to prevent. The directive stipulates that by 2030 at the latest, biofuels (biodiesel/HVO) from palm oil can no longer be counted towards national quota obligations.
+However, member states have been authorised to advance the exclusion. Some member states, such as France and Germany, have made use of this authorisation. The provision was subject of a case Malaysia brought before the World Trade Organisation (WTO).
+In last week's ruling, the WTO acknowledged that sustainability requirements as laid down in the RED II justify the exclusion palm oil.
+    </p>
+        </div>
+        <!-- Add more articles as needed -->
+    
+    
+        <script>
+            function toggleArticle(id) {
+                var article = document.getElementById(id);
+                if (article.classList.contains('hidden')) {
+                    article.classList.remove('hidden');
+                } else {
+                    article.classList.add('hidden');
+                }
+            }
+        </script>
+        </div>
+
+        
+           <!-- /Content Here -->
+      <br>
+      <br>
+
+  
+<!-- print the footer at the end of the page -->
+<!-- align the text to the centre and choose Times New Roman as text font -->
+<footer style="text-align: center; font-family: 'Times New Roman', Times, serif; padding: 3px; background-color: rgb(16, 2, 35); color: white;width: 100%;">
+    <a class="contact-link" href="index.html" style="text-decoration: none; color:#fff;">HOME page</a>
+    <p>by bushra lahshmi | maram alazri </p>
+    <a href="mailto:biosphere@gmail.com" style="text-decoration: none; color:#fff;">contact us through biosphere@gmail.com</a>
+</footer>  
+
+</body>
+</html>

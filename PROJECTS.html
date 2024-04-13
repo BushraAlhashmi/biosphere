@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BIOSPHERE</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Island+Moments|Nunito' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Cards</title>
+    <link rel="stylesheet" href="styles.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+ <link rel="stylesheet" href="mystyle.css">
+<style>.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+  
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card img {
+    align-items: center;
+    align-self: center;
+    width: 70%;
+    height: auto;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.project-title {
+    font-size: 20px; /* Adjust the size as needed */
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #0c5647;
+    color: #fff;
+    padding: 10px 0;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #00b3a7;
+}
+
+.reference {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0a372d;
+}
+
+.reference:hover {
+    color: #00b36b;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: modal-show 0.4s;
+}
+
+@keyframes modal-show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-text {
+    font-size: 16px;
+}
+</style>
+</head>
+<body>
+    <script>
+    function showModal(id) {
+    var modal = document.getElementById("modal");
+    var modalContent = document.getElementById(id);
+    modal.style.display = "block";
+    modalContent.style.display = "block";
+}
+
+function closeModal() {
+    var modal = document.getElementById("modal");
+    var modalContents = document.getElementsByClassName("modal-content");
+    modal.style.display = "none";
+    for (var i = 0; i < modalContents.length; i++) {
+        modalContents[i].style.display = "none";
+    }
+}
+
+function toggleAbstract(btn) {
+        var abstract = btn.previousElementSibling;
+        if (abstract.style.display === "none") {
+            abstract.style.display = "block";
+            btn.textContent = "Show Less";
+        } else {
+            abstract.style.display = "none";
+            btn.textContent = "Learn More";
+        }
+    }
+    </script>
+	<nav class="navbar navbar-expand-lg shadow " style="background-color: #fff;">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="logo1.png" style="height: 120px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html" style="font-family: 'Nunito'">Home</a></li>
+                 <li class="nav-item"><a class="nav-link" href="About us.html" style="font-family: 'Nunito'">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="FAQs.html" style="font-family: 'Nunito'">FAQs</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html" style="font-family: 'Nunito'">biofuel news </a></li>
+                <li class="nav-item"><a class="nav-link" href="PROJECTS.html" style="font-family: 'Nunito'">projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="fun.html" style="font-family: 'Nunito'">FUN</a></li>
+              </ul>
+          </div>
+          
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="card">
+            <img src="p1.jpeg" alt="Project 1">
+            <div class="card-content">
+                <h3 class="project-title">The impact of heat and water stress conditions on the growth of the
+                    biofuel plant Jatropha curcas</h3>
+                
+                <a href="#" class="btn" onclick="showModal('abstract1')">Learn More</a>
+                <a href="https://doi.org/10.1080/00207233.2012.663204" class="reference">Reference</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="p2.webp" alt="Project 2">
+            <div class="card-content">
+                <h3 class="project-title">Combined effect of Phoenix dactylifera biodiesel and multiwalled
+                    carbon nanotube–titanium dioxide nanoparticles for modified diesel engines</h3>
+                
+                <a href="#" class="btn" onclick="showModal('abstract2')">Learn More</a>
+                <a href="https://doi.org/10.1007/s13762-021-03152-1" class="reference">Reference</a>
+            </div>
+        </div>
+  
+            <div class="card">
+                <img src="p3.jpeg" alt="Project 3">
+                <div class="card-content">
+                    <h3 class="project-title">Enhanced liquid biofuel production from crude palm oil over synthesized NiMoW-ZSM-5/MCM-41 catalyst</h3>
+                    
+                    <a href="#" class="btn" onclick="showModal('abstract3')">Learn More</a>
+                    <a href=" https://doi.org/10.1080/15567036.2017.1411992" class="reference">Reference</a>
+                </div>
+            </div>
+          
+                <div class="card">
+                    <img src="p4.gif" alt="Project 3">
+                    <div class="card-content">
+                        <h3 class="project-title">Biodiesel production by valorizing waste Phoenix dactylifera L. Kernel oil in the presence of synthesized heterogeneous metallic oxide catalyst (Mn@MgO-ZrO 2 )</h3>
+                        
+                        <a href="#" class="btn" onclick="showModal('abstract4')">Learn More</a>
+                        <a href="10.1016/j.enconman.2017.10.064" class="reference">Reference</a>
+                    </div>
+                </div>
+            <div class="card">
+                <img src="p4.png"alt="Project 4">
+                <div class="card-content">
+                    <h3 class="project-title">Valorization of waste Date pits biomass for biodiesel production in presence of green carbon catalys</h3>
+                    
+                    <a href="#" class="btn" onclick="showModal('abstract5')">Learn More</a>
+                    <a href="https://www.lamyaalhaj.com/single-post/2017/02/12/optimization-of-oil-extraction-from-waste-date-pits-for-biodiesel-production" class="reference">Reference</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="p5.gif" alt="Project 5">
+                <div class="card-content">
+                    <h3 class="project-title">Phoenix Dactylifera Kernel Oil Used As Potential Source for Synthesizing Jet Fuel and Green Diesel</h3>
+                    
+                    <a href="#" class="btn" onclick="showModal('abstract6')">Learn More</a>
+                    <a href="https://doi.org/10.1016/j.egypro.2017.07.006" class="reference">Reference</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="p6.jpeg" alt="Project 6">
+                <div class="card-content">
+                    <h3 class="project-title">Without good planning and communication, it is impossible to have a successful launch: Maher Al Habsi, Managing Director, Wakud</h3>
+                    
+                    <a href="#" class="btn" onclick="showModal('abstract7')">Learn More</a>
+                    <a href="https://gulfleaderscircle.com/interviews/without-good-planning-and-communication-it-is-impossible-to-have-a-successful-launch-maher-al-habsi-managing-director-wakud/" class="reference">Reference</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="modal" class="modal">
+            <div class="modal-content animate" id="abstract1">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p class="modal-text">Pot experiments were carried out to evaluate the effects of drought and salinity stresses and mulch amendment on Jatropha in sand dune soil under three conditions: glasshouse, shade house and open area. Plants were irrigated with freshwater and diluted seawater adjusted to two levels of electrical conductivity- 3 and 6 dS m-1. The results showed that experimental conditions remarkably affected the evapo-transpiration rate, soil moisture, salts accumulation and plant biomass production. Low temperature (23°C) conditions exhibited highest plant growth and soil moisture and lowest salts deposition. Plants showed no symptoms of heat stress in the glasshouse. The shade house and the open area profoundly reduced plant biomass and water content in the soil. Compared to the control, the mulch amended treatments had sufficient water for plant growth even in the high temperature of the open area. High salt content was found in salinity treated pots but the salinity level did not reduce Jatropha growth. Salt accumulated in the salinity treated pots helped retain more water, reduced the temperature and provided nutrients to the plants, with results which were almost similar to those from the mulch effect. The temperature conditions of the shade house and the open area (max>40°C) caused substantial water loss and induced death of plants. Jatropha is a succulent and drought tolerant plant and a close irrigation interval is not the best option for Jatropha growth. But, organic amendment is needed when there is a big loss of soil water due to heat stress condition.</p>
+            </div>
+            <div class="modal-content animate" id="abstract2">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p class="modal-text">This investigation addressed Phoenix dactylifera biodiesel (PDME) production using an ultrasound-assisted transesterification process. The produced Phoenix dactylifera biodiesel (PDME25) was blended with different concentrations of multiwalled carbon nanotubes and titanium dioxide (TiO2). Diethyl ether (DEE, 1% vol.) and sorbitan oleate (Span80, 2% vol.) surfactants were used to enhance and stabilize nanoparticles for the physiochemical properties in the base fluids. The piston bowl geometry was modified to a toroidal type for better swirl and squish motion, and a six-hole fuel injector was used for enhanced atomization. The BTE and HRR improved by 22.9% and 20.1%, respectively, while the CO, HC, smoke emissions, BSFC, and ignition delay decreased by 32.8%, 23.8%, 13.4%, 25.2%, and 19.08%, respectively. The results showed that the blend of potential biodiesel sources, viz. Phoenix dactylifera and MWCNT–TiO2 nanoadditives, delivered comparable diesel fuel properties.</p>
+            </div>
+            <div class="modal-content animate" id="abstract3">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p class="modal-text">Micro-mesoporous ZSM-5/MCM-41 composites were prepared and then loaded with varied contents of NiMoW by the wet impregnation method. The hydrocracking conversion of crude palm oil to liquid biofuels with the prepared catalysts was carried out in a batch reactor at 400°C for 2 h. ZSM-5/MCM-41 composite exhibited 51.00% conversion with a yield of 9.23% gasoline, 20.60% kerosene, and 21.17% diesel. Upon loading of NiMoW, the catalysts exhibited an improved conversion (≥ 62.60%) and a reduced formation of coke, which resulted from combined properties of ZSM-5 with MCM-41 and the presence of dispersed NiMoW. The contents of impregnated metals also affected the performance of catalysts. Using ANOVA analysis (p < 0.05), we found that 8:8:8 wt.% NiMoW-ZSM-5/MCM-41 catalyst was suitable for the production of biofuels, when considering the efficiency and cost-effectiveness.</p>
+            </div>
+            <div class="modal-content animate" id="abstract4">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p class="modal-text">The present study intended to produce biodiesel as an efficient fuel from waste Phoenix dactylifera L. kernel oil in the presence of synthesized efficient heterogeneous metallic oxide catalyst (Mn@MgO-ZrO2). The performance of synthesized metallic oxide catalyst was evaluated based on biodiesel yield and the process has been optimized. The optimum biodiesel yield was 96.4%, when process temperature was 90 °C, catalyst loading 3 wt%, methanol to oil ratio 15:1 and reaction duration was 4 h. The product biodiesel was characterized in order to evaluate its quality according to ASTM and EN standards. Thus, characterization of biodiesel revealed that it fulfills the standard ranges defined by ASTM and EN: its acid value was 0.11 mg KOH/g, density 881 kg/m3, viscosity 3.85 mm2/s, flash point 142 °C and suitable low-temperature properties. It can thus be concluded that synthesized heterogeneous catalyst can be used efficiently for biodiesel production from waste Phoenix dactylifera L. kernel oil which satisfied the international standards defined by ASTM and EN.</p>
+            </div>
+            <div class="modal-content animate" id="abstract5">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p class="modal-text">In this study, an efficient utilization of waste Date pits biomass for synthesizing green carbon catalyst as well as production of biodiesel were investigated. The green carbon catalyst was modified by KOH and characterized by XRD, SEM, EDX, TEM and BET. Taguchi method in Response Surface Methodology (RSM) was applied to study the effect of several process parameters such as reaction temperature, time, catalysts type and methanol to oil ratio, on the yield of the produced biodiesel. The optimized yield obtained was 91.6% when the process temperature was 65 °C, with catalyst type C3 (6 wt% KOH on carbon) within 1 h and with 9:1 methanol to oil ratio. The produced biodiesel was completely characterized in order to verify its quality, compared with the international standards. Fuel properties of the produced biodiesel were found to be a cetane number 60.31, density 881 kg/m3, viscosity 4.24 mm2/s, cloud point 3.9 °C, cold filter plugging point −0.62 °C, pour point −1.4 °C and flash point 141 °C, which lies within the limits specified by the international standards of ASTM and EN. Waste Date pits biomass can be a promising platform for the production of green carbon catalysts as well as biodiesel production.</p>
+            </div>
+            <div class="modal-content animate" id="abstract6">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p class="modal-text">Phoenix Dactylifera kernel is major agricultural waste produced in Oman. Current work was conducted to produce jet fuel and green diesel from hydrodeoxygenation of Phoenix dactylifera kernel oil in presence of Pd/C catalyst. The hydrodeoxygenation of Phoenix dactylifera kernel oil occurred to be highly efficient at following mild operating conditions such as temperature 300°C pressure 10bar with continuous stirring at 500rpm. Detailed product characterization revealed that large fraction of paraffinic hydrocarbons were found which accounts up to 91.1 % which attributed due to efficient hydrodeoxygenation. Based on the type of components in product oil, it was calculated that the maximum fraction of hydrocarbons formed lies within the range of green diesel 72.0 % then jet fuel 30.4% by using Pd/C catalysts. The density of product oil was 0.88 kg/m3 and viscosity of product calculated was 3.49 mm2/s. Calorific value for product obtained was 44.11 MJ/kg when Pd/C catalyst was used for hydrodeoxygenation. Based on product analysis it can concluded that Phoenix Dactylifera kernel oil can be successfully utilized for synthesizing green diesel and jet fuel fraction.</p>
+            </div>
+            <div class="modal-content animate" id="abstract7">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p class="modal-text">Our research showed that a British company, Green Fuel, was doing something similar and decided to reach out to them. We started collecting used cooking oil from the residents of Oman and importing it to Green Fuel. However, we were unable to do this on a large scale as Oman is a small country meaning that the amount of used cooking oil collected was not enough to fuel the entire country. Therefore, we started on a smaller scale.</p>
+            </div>
+        </div></div>
+<br><br>          
+<!-- print the footer at the end of the page -->
+<!-- align the text to the centre and choose Times New Roman as text font -->
+<footer style="text-align: center; font-family: 'Times New Roman', Times, serif; padding: 3px; background-color: rgb(16, 2, 35); color: white;width: 100%;">
+    <a class="contact-link" href="index.html" style="text-decoration: none; color:#fff;">HOME page</a>
+    <p>by bushra lahshmi | maram alazri </p>
+    <a href="mailto:biosphere@gmail.com" style="text-decoration: none; color:#fff;">contact us through biosphere@gmail.com</a>
+</footer>  
+
+</body>
+</html>
